@@ -15,7 +15,7 @@ A lightweight text transformer, terminal colorizer, and CLI utility with zero de
 ## Installation
 
 ```bash
-npm install text-craft
+npm install @saymaven/text-craft
 ```
 
 ---
