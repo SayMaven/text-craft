@@ -1,0 +1,55 @@
+{
+  "name": "text-craft",
+  "version": "1.0.0",
+  "description": "A lightweight text transformer and CLI terminal colorizer with zero dependencies.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "text-craft": "./dist/cli.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "keywords": [
+    "text",
+    "kebab-case",
+    "snake_case",
+    "camelCase",
+    "pascalCase",
+    "colors",
+    "ansi",
+    "cli",
+    "terminal",
+    "zero-dependency"
+  ],
+  "author": "SayMaven",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SayMaven/text-craft.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SayMaven/text-craft/issues"
+  },
+  "homepage": "https://github.com/SayMaven/text-craft#readme",
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7"
+  }
+}
