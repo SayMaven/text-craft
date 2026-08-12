@@ -1,6 +1,6 @@
 {
   "name": "@saymaven/text-craft",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight text transformer and CLI terminal colorizer with zero dependencies.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
